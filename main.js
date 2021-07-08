@@ -21,6 +21,8 @@ function renderCoffees(coffees) {
 function updateCoffees(event) {
     event.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
+    console.log("updating coffees")
+
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
         if (coffee.roast === selectedRoast) {
@@ -51,7 +53,10 @@ var coffees = [
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
-
+var searchInput = document.querySelector('#coffee-name');
 tbody.innerHTML = renderCoffees(coffees);
 
+roastSelection.addEventListener('change', updateCoffees);
+
 submitButton.addEventListener('click', updateCoffees);
+
