@@ -1,7 +1,6 @@
 table {
     border-collapse: collapse;
     margin: 15px 0;
-
 }
 
 td, th {
@@ -11,17 +10,21 @@ td, th {
 
 body {
     background-size: cover;
-}
 
-h1 {
-    font-size: 80px !important;
-}
-
-.container {
-    margin: 0px;
 
 }
 
+header {
+    font-size:100px;
+}
 
+.coffee-title{
+font-size: 100px;
+}
 
+.roast{
+margin-right: 100px;
+}
+.coffee-name{
 
+}
